@@ -1,1 +1,4 @@
-from funciones.py import *
+from funciones import *
+from javi import *
+
+crearTableroVacio()
