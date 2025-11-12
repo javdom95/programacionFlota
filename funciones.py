@@ -1,6 +1,6 @@
 def MenuDificultad():
     while True:
-        print()
+        print() 
 
 def PideCoordenadas(tablero):
     CoordenadaX = 0
