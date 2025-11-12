@@ -13,5 +13,4 @@ while nivelDif < 1 or nivelDif > 3:
         print("Por favor, introduce un valor válido: 1, 2 ó 3.")
         nivelDif = 0
     tableroJugador = [[]]
-    
 crearTableroJugador(nivelDif)
