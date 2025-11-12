@@ -1,12 +1,19 @@
 def crearTableroVacio():
     tablero = []
-    columnaLetras = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J"]
     for i in range(10):
-        tablero.append([columnaLetras[i]])
+        tablero.append([])
         for j in range(10):
             tablero[i].append("-")
+    return tablero
 
-    filaNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ]
+def mostrarTablero(tablero):
     print("  " + " ".join(str(num) for num in range(10)))
+    columnaLetras = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J"]
+    letra = 0
     for linea in tablero:
-        print(*linea)   
+        print(columnaLetras[letra], *linea)
+        letra += 1   
+
+    
+tablero = crearTableroVacio()
+mostrarTablero(tablero)
