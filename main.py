@@ -1,4 +1,7 @@
-from funciones.py import *
+from funciones import *
+from javi import *
+
+crearTableroVacio()
 
 nivelDif = 0
 while nivelDif < 1 or nivelDif > 3:
