@@ -8,7 +8,7 @@ def MenuDificultad():
 def PideCoordenadas(tablero):
     CoordenadaX = 0
 
-def crearTableroJugador(dificul):
+def crearTableroJugador(dificultad):
     if dificultad == 3:
         arrayDificil = [
             ["-", "-", "-", "L", "-", "-", "-", "-", "-", "-"],
@@ -53,3 +53,7 @@ def crearTableroJugador(dificul):
             ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
             ]
         return arrayFacil
+
+def crearTableroOrdenador(dificultad):
+    return crearTableroJugador(dificultad)
+
