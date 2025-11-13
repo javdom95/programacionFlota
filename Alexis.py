@@ -1,12 +1,5 @@
 import random
 
-def MenuDificultad():
-    while True:
-        print() 
-
-def PideCoordenadas(tablero):
-    CoordenadaX = 0
-
 def crearTableroJugador(dificultad):
     if dificultad == 3:
         arrayDificil = [

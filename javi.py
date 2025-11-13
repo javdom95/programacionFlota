@@ -10,7 +10,7 @@ def crearTableroVacio():
 
 def mostrarTablero(tablero):
     print("  " + " ".join(str(num) for num in range(10)))
-    columnaLetras = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J"]
+    columnaLetras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
     letra = 0
     for linea in tablero:
         print(columnaLetras[letra], *linea)
@@ -23,10 +23,18 @@ def quedanBarcos(tablero):
                 return True
     return False
 
+def disparoAleatorio():
+    letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+    fila = letras[random.randint(0,9)]
+    columna = random.randint(0,9)
+    return fila, columna
 
-tablero = crearTableroVacio()
+fila, columna = disparoAleatorio()
+print(fila + str(columna))
+
+'''tablero = crearTableroVacio()
 mostrarTablero(tablero)
 print(quedanBarcos(tablero))
 
 tableroJugador = crearTableroJugador(3)
-print(quedanBarcos(tableroJugador))
+print(quedanBarcos(tableroJugador))'''
