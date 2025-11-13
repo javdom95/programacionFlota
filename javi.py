@@ -15,8 +15,8 @@ def mostrarTablero(tablero):
         letra += 1   
 
 def quedanBarcos(tablero):
-    for i in range(tablero.length):
-        for j in range(tablero[i].length):
+    for i in range(len(tablero)):
+        for j in range(len(tablero[i])):
             if tablero[i][j] != "-" or tablero[i][j] != "X":
                 return True
     return False
@@ -24,3 +24,4 @@ def quedanBarcos(tablero):
 
 tablero = crearTableroVacio()
 mostrarTablero(tablero)
+print(quedanBarcos(tablero))
