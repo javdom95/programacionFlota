@@ -19,7 +19,7 @@ def mostrarTablero(tablero):
 def quedanBarcos(tablero):
     for i in range(len(tablero)):
         for j in range(len(tablero[i])):
-            if tablero[i][j] != "-" and tablero[i][j] != "X":
+            if tablero[i][j] != "-" and tablero[i][j] != "X" and tablero[i][j] != "A":
                 return True
     return False
 
