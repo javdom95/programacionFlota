@@ -14,6 +14,13 @@ def mostrarTablero(tablero):
         print(columnaLetras[letra], *linea)
         letra += 1   
 
-    
+def quedanBarcos(tablero):
+    for i in range(tablero.length):
+        for j in range(tablero[i].length):
+            if tablero[i][j] != "-" or tablero[i][j] != "X":
+                return True
+    return False
+
+
 tablero = crearTableroVacio()
 mostrarTablero(tablero)
