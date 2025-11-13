@@ -1,4 +1,4 @@
-from Alexis import *
+from Alexis import * 
 
 def crearTableroVacio():
     tablero = []
@@ -19,13 +19,14 @@ def mostrarTablero(tablero):
 def quedanBarcos(tablero):
     for i in range(len(tablero)):
         for j in range(len(tablero[i])):
-            if tablero[i][j] != "-" or tablero[i][j] != "X":
+            if tablero[i][j] != "-" and tablero[i][j] != "X":
                 return True
     return False
 
 
 tablero = crearTableroVacio()
 mostrarTablero(tablero)
+print(quedanBarcos(tablero))
 
 tableroJugador = crearTableroJugador(3)
 print(quedanBarcos(tableroJugador))

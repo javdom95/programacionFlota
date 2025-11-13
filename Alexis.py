@@ -1,4 +1,3 @@
-from javi import *
 import random
 
 def MenuDificultad():
