@@ -1,3 +1,5 @@
+from Alexis import *
+
 def crearTableroVacio():
     tablero = []
     for i in range(10):
@@ -24,4 +26,6 @@ def quedanBarcos(tablero):
 
 tablero = crearTableroVacio()
 mostrarTablero(tablero)
-print(quedanBarcos(tablero))
+
+tableroJugador = crearTableroJugador(3)
+print(quedanBarcos(tableroJugador))
