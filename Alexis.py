@@ -164,11 +164,7 @@ def crearTableroOrdenador(dificultad):
     return crearTableroJugador(dificultad)
 
 
-dif = 3
-aa = crearTableroJugador(dif)
-mostrarTablero(aa)
 '''
-
         arrayDificil = [
             ["-", "-", "-", "L", "-", "-", "-", "-", "-", "-"],
             ["-", "-", "-", "B", "B", "B", "-", "-", "-", "-"],
@@ -212,6 +208,4 @@ mostrarTablero(aa)
             ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
             ]
         return arrayFacil
-
-
         '''

@@ -1,13 +1,5 @@
 print("-----Bienvenido a Hundir la Flota-----")
 
-def MenuDificultad():
-    while True:
-        print()
-
-def PideCoordenadas(tablero):
-    CoordenadaX = 0
-
-
 def seleccionar_dificultad():
     while True:
         print("1. Fácil\n2. Media\n3. Difícil")
