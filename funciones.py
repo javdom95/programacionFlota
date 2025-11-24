@@ -162,10 +162,10 @@ def crearTableroOrdenador(dificultad):
 def pideCoordenadas(tablero):
     while True:
         try:        
-            fila = str(input("Introduce una fila a elegir (A-J):")).upper()
+            fila = str(input("Introduce una fila a elegir (A-J): ")).upper()
             if fila not in ("A", "B", "C", "D", "E", "F", "G", "H", "I", "J"):
                 raise Exception
-            col = int(input("Introduce una col a elegir (0-9)"))
+            col = int(input("Introduce una columna a elegir (0-9): "))
             if col > 9 or col < 0:
                 print("Coordenadas incorrectas, vuelve a introducir las coordenadas, por favor")
                 continue
@@ -217,5 +217,5 @@ def disparoAleatorio(tablero):
         indiceFila = ord(fila) - ord("A")
         if tablero[indiceFila][columna] in ("X","A"): 
             continue
-        print("Disparo del ordenador realizado en coordenada: ",fila+ "-" + str(columna))
+        print("Disparo del ordenador realizado en coordenada:",fila+ "-" + str(columna))
         return indiceFila, columna
